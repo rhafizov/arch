@@ -38,12 +38,6 @@ Examples:
 
         static void Main(string[] args)
         {
-
-        //    args = new string[] { "compress", "TheFile.mp4", "TheFile.mp4.gz" };
-              args = new string[] { "decompress", "TheFile.mp4.gz", "TheFile.mp4" };
-            //     args = new string[] { "compress", "TheFile1.jpg", "TheFile1.jpg.gz" };
-            //     args = new string[] { "decompress", "TheFile1.jpg.gz", "TheFile1.jpg" };
-
             string inputFileFullName = FileAccessValidationHelper.ValidateAndGetAbsoluteFilePath(args[1]);
             string outputFileFullName = FileAccessValidationHelper.CreateFileAndGetAbsoluteFilePath(args[2]);
 
