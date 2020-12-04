@@ -94,8 +94,6 @@ namespace Archiver.Conveyer
 
         private void EnqueueToQueueTwo(byte[] chunk)
         {
-
-
             lock (_queueTwoLocker) _queueTwo.Enqueue(chunk);
             _whTwo.Set();
         }
