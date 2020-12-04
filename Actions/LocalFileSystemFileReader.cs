@@ -28,7 +28,7 @@ namespace ArchiverTestApp
            return _input.Position != _input.Length;
         }
 
-        public byte[] Read()
+        public virtual byte[] Read()
         {
             if(_input.Position == _input.Length)
             {
